@@ -12,7 +12,7 @@
         
           $(window).scroll(function() {    
               var scroll = $(window).scrollTop();
-              if (scroll >= 950) {
+              if (scroll >= 50) {
                   header.addClass("scrolled");
               } else {
                   header.removeClass("scrolled");
@@ -24,7 +24,7 @@
       var typed = new Typed('#typed', {
         
         
-        strings: ['#wearechallengers'],
+        strings: ['#WeAreChallengers'],
         smartBackspace: true ,// Default value
         startDelay: 10,
         typeSpeed:100,

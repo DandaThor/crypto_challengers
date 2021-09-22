@@ -2,13 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mina:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Turret+Road&display=swap');
 
 
 body {
   margin: 0;
   padding: 0;
-  background: #141316;
-  overflow-y: hidden;
+  background: black;
+  overflow-y: scroll;
+}
+.heading{
+  font-family: 'Turret Road', cursive;
+  color: white;
+  font-size: 3rem !important;
+}
+.scrolled{
+  background-color: black !important;
+  transition: ease-in 1s;
 }
 .navbar{
   padding-top: 1.5rem;
@@ -49,25 +59,48 @@ body {
 .top{
   background-image: url("../assets/top-img.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
+  background-size: cover;
   display: flex;
+  height: 100vh;
   justify-content: center;
   align-items: center;
 }
 .top p{
   font-size: 2.5rem;
   line-height:3.0625rem;
+  font-weight: bold;
   color: white;
   font-family: 'Metrophobic', sans-serif;
+  padding-left: 20rem !important;
 
 }
 #typed{
+  font-size: 3rem;
   font-weight: bolder;
-  background: -webkit-linear-gradient( 90deg,#f37ad1 8.4%,#9882f4 58.19%,#55eed0 107.98%);
+  background: linear-gradient( 90deg,#f37ad1 8.4%,#9882f4 58.19%,#55eed0 107.98%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Metrophobic', sans-serif;
+}
+
+.about{
+  height: 91vh;
+}
+.about-content-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content{
+  width: 58.25rem;
+  height: 16.875rem;
+  border-radius: 66px;
+}
+.content:hover{
+  box-shadow: 0 4px 24px 1px  #f37ad1,
+          0 4px 24px 2px #9882f4,
+          0 4px 26px 6px #55eed0;
+  transition: ;
 }
 
 @media (min-width:992px) {
@@ -76,6 +109,9 @@ body {
   }
   .recent{
     display: none;
+  }
+  .about{
+    height: 89vh;
   }
 
   
@@ -105,8 +141,14 @@ body {
     font-size: 1.5rem;
     line-height:2.0625rem;
   }
+  #typed{
+    font-size: 2rem;
+  }
   .top .ps-5{
     padding-left: 2rem !important;
+  }
+  .about{
+    height: 92vh;
   }
 }
 @media (max-width:600px) {
