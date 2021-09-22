@@ -20,6 +20,19 @@
           });
         
       });
+
+      var typed = new Typed('#typed', {
+        
+        
+        strings: ['#wearechallengers'],
+        smartBackspace: true ,// Default value
+        startDelay: 10,
+        typeSpeed:100,
+        backSpeed: 100,
+        loop:true,
+        
+      });
+      
       
 
 //contact form
