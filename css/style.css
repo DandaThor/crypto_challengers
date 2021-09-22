@@ -1,14 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mina:wght@700&display=swap');
+
+
 body {
   margin: 0;
   padding: 0;
   background: #141316;
   overflow-y: hidden;
 }
+.navbar{
+  padding-top: 1.5rem;
+  padding-bottom: 0.099rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+.logo{
+  display: none;
+}
+.hero{
+  margin-bottom: 1.5rem !important;
+}
+.navbar-brand img{
+  width: 61px !important;
+  height: 60px !important;
+}
+.navbar-brand{
+  font-family: 'Mina', sans-serif;
+  color: white !important;
+  font-size: 35px;
+}
 .nav-btn .navbar-nav{
   display: flex;
   flex-direction: row !important;
 }
-.nav-btn1,.nav-btn-not{
+.nav-btn1,.nav-btn2,.nav-btn-not{
   border: 2px solid transparent;
   border-radius: 10px;
   background-image: linear-gradient(black, black),
@@ -23,15 +49,39 @@ body {
   .nav-btn{
     display: none;
   }
+  .recent{
+    display: none;
+  }
 
   
 }
 @media (max-width:992px) {
+  .navbar{
+    padding-top: 0.5rem;
+    padding-bottom: 0;
+  }
+  .hero{
+    margin-bottom: 0.5rem !important;
+  }
   .nav-btn-not{
     display: none;
   }
   .nav-btn .nav-link{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+  .nav-btn1,.nav-btn-not .me-4{
+    margin-left: -16px !important;
+  }
+  .nav-btn .navbar-nav .nav-btn2{
+    display: none;
+  }
+}
+@media (max-width:600px) {
+  .logo{
+    display: contents;
+  }
+  .logo-not{
+    display: none;
   }
 }
