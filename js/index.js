@@ -1,4 +1,8 @@
-        addEventListener("load", function() {
+
+       
+       
+       
+       addEventListener("load", function() {
             setTimeout(hideURLbar, 0);
         }, false);
 

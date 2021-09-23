@@ -14,7 +14,11 @@ body {
   padding: 0;
   background: black;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
+
+
+
 .heading{
   font-family: 'Turret Road', cursive;
   color: white;
@@ -49,6 +53,9 @@ body {
   font-family: 'Mina', sans-serif;
   color: white !important;
   font-size: 35px;
+}
+.nav-link:hover{
+  color: silver !important;
 }
 .nav-btn .navbar-nav{
   display: flex;
@@ -190,7 +197,7 @@ body {
   }
 
 
-  .btn-primary{
+  .button .btn-primary{
     background-color: black;
     border: 2px solid white;
     border-radius: 37px;
@@ -198,7 +205,7 @@ body {
     font-family: 'Turret Road', cursive;
 
   }
-  .btn-primary:hover{
+  .button .btn-primary:hover{
     background-color: white;
     border: 2px solid black;
     border-radius: 37px;
@@ -261,9 +268,7 @@ body {
   }
   .mail-phone .fa {
     display: initial !important;
-    background: linear-gradient( 180deg,#f37ad1 8.4%,#9882f4 58.19%,#55eed0 107.98%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: white;
   }
   
   .mail-phone a {
@@ -272,6 +277,23 @@ body {
   }
   .mail-phone a:hover{
     color: silver;
+  }
+
+  .icons a{
+    text-decoration: none;
+  }
+  .icons .btn-primary{
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-family: 'Turret Road', cursive;
+
+  }
+  .icons .btn-primary:hover{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    color: black;
   }
 
   .copyright {
@@ -397,5 +419,15 @@ body {
   .service-content{
     font-size: 1.5rem;
   }
+
+}
+
+.recentcont{
+  height: 45vh;
+}
+.recentcont h1{
+  padding-top: 100px;
+  color: white;
+  font-family: 'Turret Road', cursive;
 
 }
