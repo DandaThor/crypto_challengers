@@ -141,14 +141,16 @@ body {
   justify-content: center;
   text-align: center;
 }
+.caro{
+  height: 100vh;
+}
 .section-padding{
   padding:60px 0;
   }
   .brand-carousel {
   background: transparent;
-  margin-top: 15%;
   }
-  .owl-dots {
+/*  .owl-dots {
   text-align: center;
   margin-top: 4%;
   }
@@ -156,14 +158,108 @@ body {
   display: inline-block;
   height: 15px !important;
   width: 15px !important;
-  background-color: #878787 !important;
+  background-color: #999898 !important;
   opacity: 0.8;
   border-radius: 50%;
   margin: 0 5px;
   }
   .owl-dot.active {
-  background-color: #000 !important;
+  background-color: rgb(255, 255, 255) !important;
+  }*/
+  .single-logo img{
+    height: 100px;
   }
+
+  .contact {
+    width: 100vw;
+    color: #ff592d;
+  }
+
+
+  .btn-primary{
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 37px;
+    width: 150px;
+  }
+  .btn-primary:hover{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 37px;
+    color: black;
+  }
+
+  .form-control{
+    width: 40rem !important;
+    color: white;
+    transition: none;
+    border: none;
+    border-radius: 37px;
+    font-family: 'Turret Road', cursive;
+
+    border: 2px solid white;
+  }
+  input[placeholder], [placeholder], *[placeholder] {
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 37px;
+    
+  }
+  ::placeholder{
+    color: white !important;
+    opacity: .5 !important;
+  }
+  .form-control:focus{
+    background: #47474c;
+    color: white;
+  }
+  .input-group{
+    width: 40rem;
+  }
+  .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu), .input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3) {
+    border-top-right-radius: 37px;
+    border-bottom-right-radius: 37px;
+  }
+
+  #validationCustomUsername-error{
+    width: 100%;
+  }
+  #submit-form{
+    color: red;
+  
+    justify-content: center;
+  }
+  #submit-form .row .input-group{
+    padding: 0;
+  }
+  .mail-phone .fa {
+    display: initial !important;
+  }
+  
+  .mail-phone a {
+    color: #ff592d;
+    text-decoration: none;
+  }
+  .mail-phone a:hover{
+    color: #e4866c;
+  }
+
+  .copyright {
+    align-self: center;
+    color: #ff592d;
+  }
+  .copy a {
+    text-decoration: none;
+    color: #ff592d;
+  }
+  .copy a:hover {
+    color: #e4866c;
+  }
+
+
 
 @media (min-width:992px) {
   .nav-btn{

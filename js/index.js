@@ -117,6 +117,7 @@ $('.brand-carousel').owlCarousel({
   loop:true,
   margin:10,
   autoplay:true,
+  autoplayTimeout:1000,
   responsive:{
     0:{
       items:1
