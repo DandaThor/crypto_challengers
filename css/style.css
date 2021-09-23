@@ -5,6 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Turret+Road&display=swap');
 
 
+:root {
+  --animate-duration: 3s;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -15,11 +19,12 @@ body {
   font-family: 'Turret Road', cursive;
   color: white;
   font-size: 3rem !important;
+  font-weight: 500;
 }
 .scrolled{
   background-color: black !important;
   transition: ease-in 1s;
-  border-bottom: .5px solid rgb(116, 112, 112);
+  border-bottom: .5px solid rgb(29, 28, 28);
 }
 .navbar{
   padding-top: 1.5rem;
@@ -27,6 +32,8 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
 }
+
+
 
 .logo{
   display: none;
@@ -118,10 +125,10 @@ body {
   align-items: center;
 }
 .card{
+  min-width: 22rem;
   max-width: 24.87rem;
   height: 25.125rem;
   margin-top: 2rem;
-  margin-left: 2rem;
   border-radius: 26px;
   background: black;
   color: white;
@@ -131,19 +138,26 @@ body {
   background-origin: border-box;
   background-clip: content-box, border-box;
   font-family: 'Turret Road', cursive;
+
   
 }
-.services-heading h1{
-  font-size: 2rem;
+.card:hover{
+  transform: translateY(-1rem);
+  transition: ease-in .5s;
 }
-.services-content{
+.service-heading h3{
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding-top: 25px;
+}
+.service-content{
   display: flex;
   justify-content: center;
   text-align: center;
+  font-size: 1.75rem;
+  padding-top: 10px;
 }
-.caro{
-  height: 100vh;
-}
+
 .section-padding{
   padding:60px 0;
   }
@@ -167,7 +181,7 @@ body {
   background-color: rgb(255, 255, 255) !important;
   }*/
   .single-logo img{
-    height: 100px;
+    height: 90px;
   }
 
   .contact {
@@ -181,6 +195,8 @@ body {
     border: 2px solid white;
     border-radius: 37px;
     width: 150px;
+    font-family: 'Turret Road', cursive;
+
   }
   .btn-primary:hover{
     background-color: white;
@@ -235,28 +251,45 @@ body {
   #submit-form .row .input-group{
     padding: 0;
   }
+  .mail-phone{
+    color: white;
+    font-family: 'Turret Road', cursive;
+  }
+  .mail-phone h5{
+
+    font-weight: bold;
+  }
   .mail-phone .fa {
     display: initial !important;
+    background: linear-gradient( 180deg,#f37ad1 8.4%,#9882f4 58.19%,#55eed0 107.98%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   
   .mail-phone a {
-    color: #ff592d;
+    color: white;
     text-decoration: none;
   }
   .mail-phone a:hover{
-    color: #e4866c;
+    color: silver;
   }
 
   .copyright {
     align-self: center;
-    color: #ff592d;
+    background: linear-gradient( 90deg,#f37ad1 8.4%,#9882f4 58.19%,#55eed0 107.98%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Turret Road', cursive;
+
   }
   .copy a {
     text-decoration: none;
-    color: #ff592d;
+    color: white;
   }
   .copy a:hover {
-    color: #e4866c;
+    background: linear-gradient( 270deg,#f37ad1 8.4%,#9882f4 58.19%,#55eed0 107.98%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
 
@@ -346,16 +379,23 @@ body {
     font-size: 1rem;
     max-width: 90%;
   }
-  #about img{
+  .count img{
     width: 6.375rem !important;
   }
-  #about .imgfluid img{
+   .imgfluid img{
     width: 19.125rem !important;
   }
   .card{
-    width: auto;
-    height: 14rem;
+    min-width: auto;
+    width: 21rem;
+    height: 23rem;
     margin-left: 0rem;
+  }
+  .service-heading h3{
+    font-size: 2rem;
+  }
+  .service-content{
+    font-size: 1.5rem;
   }
 
 }

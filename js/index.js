@@ -29,6 +29,7 @@
         startDelay: 10,
         typeSpeed:100,
         backSpeed: 100,
+        startDelay:2000,
         loop:true,
         
       });
