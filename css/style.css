@@ -112,14 +112,15 @@ body {
   font-family: 'Turret Road', cursive;
 
 }
-.about .row{
+.card-center{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .card{
-  width: 24.87rem;
+  max-width: 24.87rem;
   height: 25.125rem;
+  margin-top: 2rem;
   margin-left: 2rem;
   border-radius: 26px;
   background: black;
@@ -140,6 +141,29 @@ body {
   justify-content: center;
   text-align: center;
 }
+.section-padding{
+  padding:60px 0;
+  }
+  .brand-carousel {
+  background: transparent;
+  margin-top: 15%;
+  }
+  .owl-dots {
+  text-align: center;
+  margin-top: 4%;
+  }
+  .owl-dot {
+  display: inline-block;
+  height: 15px !important;
+  width: 15px !important;
+  background-color: #878787 !important;
+  opacity: 0.8;
+  border-radius: 50%;
+  margin: 0 5px;
+  }
+  .owl-dot.active {
+  background-color: #000 !important;
+  }
 
 @media (min-width:992px) {
   .nav-btn{
