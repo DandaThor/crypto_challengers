@@ -93,14 +93,25 @@ body {
 }
 .content{
   width: 58.25rem;
-  height: 16.875rem;
+  height: fit-content;
   border-radius: 66px;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 .content:hover{
   box-shadow: 0 4px 24px 1px  #f37ad1,
           0 4px 24px 2px #9882f4,
           0 4px 26px 6px #55eed0;
-  transition: ;
+}
+.content p{
+  margin: 0;
+  padding-top: 10px;
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Turret Road', cursive;
+
 }
 
 @media (min-width:992px) {
@@ -150,13 +161,42 @@ body {
   .about{
     height: 92vh;
   }
+  .content{
+    width: 92.25%;
+    height: fit-content;
+  }
+  .content p{
+    font-size: 1.2rem;
+    max-width: 95%;
+  }
+
 }
+
+@media (max-width:768px){
+  .content{
+    width: 92.25%;
+    height: fit-content;
+  }
+  .content p{
+    font-size: 1.2rem;
+    max-width: 95%;
+  }
+}
+
 @media (max-width:600px) {
   .logo{
     display: contents;
   }
   .logo-not{
     display: none;
+  }
+  .content{
+    width: 90.25%;
+    height: fit-content;
+  }
+  .content p{
+    font-size: 1rem;
+    max-width: 90%;
   }
 
 }
