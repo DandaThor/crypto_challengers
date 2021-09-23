@@ -19,6 +19,7 @@ body {
 .scrolled{
   background-color: black !important;
   transition: ease-in 1s;
+  border-bottom: .5px solid rgb(116, 112, 112);
 }
 .navbar{
   padding-top: 1.5rem;
@@ -26,6 +27,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
 }
+
 .logo{
   display: none;
 }
@@ -83,9 +85,6 @@ body {
   font-family: 'Metrophobic', sans-serif;
 }
 
-.about{
-  height: 91vh;
-}
 .about-content-box{
   display: flex;
   justify-content: center;
@@ -113,6 +112,34 @@ body {
   font-family: 'Turret Road', cursive;
 
 }
+.about .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  width: 24.87rem;
+  height: 25.125rem;
+  margin-left: 2rem;
+  border-radius: 26px;
+  background: black;
+  color: white;
+  border: 5px solid transparent;
+  background-image: linear-gradient(black, black),
+    linear-gradient( 90deg,#f37ad1 8.4%,#9882f4 58.19%,#55eed0 107.98%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  font-family: 'Turret Road', cursive;
+  
+}
+.services-heading h1{
+  font-size: 2rem;
+}
+.services-content{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 
 @media (min-width:992px) {
   .nav-btn{
@@ -121,9 +148,7 @@ body {
   .recent{
     display: none;
   }
-  .about{
-    height: 89vh;
-  }
+
 
   
 }
@@ -158,9 +183,7 @@ body {
   .top .ps-5{
     padding-left: 2rem !important;
   }
-  .about{
-    height: 92vh;
-  }
+
   .content{
     width: 92.25%;
     height: fit-content;
@@ -168,6 +191,10 @@ body {
   .content p{
     font-size: 1.2rem;
     max-width: 95%;
+  }
+  .card{
+    margin-left: 0;
+    width: auto;
   }
 
 }
@@ -181,6 +208,7 @@ body {
     font-size: 1.2rem;
     max-width: 95%;
   }
+
 }
 
 @media (max-width:600px) {
@@ -197,6 +225,17 @@ body {
   .content p{
     font-size: 1rem;
     max-width: 90%;
+  }
+  #about img{
+    width: 6.375rem !important;
+  }
+  #about .imgfluid img{
+    width: 19.125rem !important;
+  }
+  .card{
+    width: auto;
+    height: 14rem;
+    margin-left: 0rem;
   }
 
 }
