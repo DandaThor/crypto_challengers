@@ -1,4 +1,6 @@
-
+$(window).on("load",function(){
+  $(".loader").fadeOut("slower");
+});
        
        
        
@@ -98,7 +100,7 @@ $(document).ready(function(){
 
     submitHandler: function(form) {
       $.ajax({
-        url:"https://script.google.com/macros/s/AKfycbymM0eObSYynWca7LC3jmVAm3gD-A2qOQXG4n8YsWaqY28gJVXb7E1zOPuwLDhuT_F6/exec",
+        url:"https://script.google.com/macros/s/AKfycbw7zHeNRhilb3V3bQ9A9hbNeCVv9HCA026AIUPSLh1HcgI4LPblDRL8HIPIbfI_qlrC/exec",
         data:$("#submit-form").serialize(),
         method:"post",
         success:function (response){
@@ -125,6 +127,9 @@ $('.brand-carousel').owlCarousel({
   autoplayTimeout:1000,
   responsive:{
     0:{
+      items:1
+    },
+    500:{
       items:1
     },
     600:{

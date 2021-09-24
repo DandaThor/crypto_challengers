@@ -6,8 +6,49 @@
 
 
 :root {
-  --animate-duration: 3s;
+  --animate-duration: 2s;
 }
+
+.loader{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.loader span{
+  display: block;
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+  background-color: #55eed0;
+  border-radius: 50%;
+  animation: loader 2s linear infinite;
+}
+span:nth-child(1){
+  animation-delay: 50ms;
+}
+span:nth-child(2){
+  animation-delay: 100ms;
+}
+span:nth-child(3){
+  animation-delay: 150ms;
+}
+span:nth-child(4){
+  animation-delay: 200ms;
+}
+@keyframes loader{
+  10%{
+    background: #f37ad1;
+  }
+  20%{
+    background: #9882f4;
+  }
+
+}
+
 
 body {
   margin: 0;
@@ -114,9 +155,8 @@ body {
   text-align: center;
 }
 .content:hover{
-  box-shadow: 0 4px 24px 1px  #f37ad1,
-          0 4px 24px 2px #9882f4,
-          0 4px 26px 6px #55eed0;
+  -webkit-box-shadow: 9px -10px 15px 2px rgba(243,122,209,0.67), -16px -8px 15px 2px rgba(152,130,244,0.67), 0px 16px 15px 4px rgba(85,238,208,0.5), 0px -4px 15px 13px rgba(85,238,208,0); 
+  box-shadow: 9px -10px 15px 2px rgba(243,122,209,0.67), -16px -8px 15px 2px rgba(152,130,244,0.67), 0px 16px 15px 4px rgba(85,238,208,0.5), 0px -4px 15px 13px rgba(85,238,208,0);
 }
 .content p{
   margin: 0;
@@ -268,7 +308,7 @@ body {
   }
   .mail-phone .fa {
     display: initial !important;
-    background: white;
+    color: white;
   }
   
   .mail-phone a {
@@ -420,6 +460,11 @@ body {
     font-size: 1.5rem;
   }
 
+}
+@media (max-width:500px) {
+  .single-logo img{
+    height: 90px;
+  }
 }
 
 .recentcont{
